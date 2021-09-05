@@ -1,0 +1,241 @@
+.about{
+   width: 50%;
+   float: right;
+   height: 625px;
+   background-image: url("about.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.bgg{
+  height: 625px;
+  background-image:url("ABOUTHALF.jpeg");
+  background-repeat: no-repeat; 
+  background-size: 50%;
+  width: 50%;
+  float: left;
+  background-attachment: fixed;
+  background-position: left;
+
+}
+
+
+
+.about h1{
+  padding-top: 40px;
+  text-align: center;
+  font-size: 55px;
+  color: white;
+  font-style: bold;
+  text-shadow: 0px 2px 3px #555;
+  letter-spacing: 10px;
+  font-family: "Lucida Handwriting";
+}
+.about p{
+  color: white;
+  text-align: left;
+  font-family: "Courier New";
+  padding-top: 25px;
+  padding-left: 20px;
+  font-size: 45px;
+}
+
+.about ul li{
+  color: white;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 25px;
+  list-style: none;
+}
+
+.about li{
+  font-family: "Papyrus";
+}
+.heading
+{
+  padding-top: 15px;
+}
+.h1boi:hover
+{
+  color: aquamarine;
+}
+@media (max-width: 1000px) {
+  .bgg
+  {
+    display: none
+  }
+  .about ul li{
+    padding-top: 10px;
+  }
+
+  .about{
+    width: 100%;
+    height: 600px;
+  }
+
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main1 {
+  background-color: #ecf9ff;
+}
+
+.main1 {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.4)),  url("ABOUTHALF.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: azure;
+  padding-bottom: 40px;
+  background-attachment: fixed;
+}
+
+.main{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main h1 {
+  font-size: 57px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.btn1 {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  /* cursor: pointer; */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* background: transparent; */
+  display: inline-block;
+  cursor: not-allowed;
+}
+
+/* .btn1:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+} */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+    display: block;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+    display: block;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, black 40%, grey 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.header2
+{
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(255, 255, 255, 0.4)),  url("bg.jpg"); 
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+
+}
+@media (max-width: 1000px) {
+  .pre
+  {
+    text-align: left;
+  }
+  .img_white h1{
+      padding-bottom: 80px;
+  }
+  .img_white
+  {
+    width: 100%;
+  }
+}

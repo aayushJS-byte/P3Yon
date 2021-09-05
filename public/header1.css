@@ -1,0 +1,144 @@
+html,
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.header1
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 60, 60);
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.logo-container1
+{
+    padding-top: 10px;
+    padding-bottom:6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+.logo-container1 img
+{
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+.h11, .h33 {
+    margin:auto 0; 
+}
+.h11
+{
+    font-size: 40px;
+}
+.nav-items1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.nav1 
+{
+    margin: 30px;
+    text-align: center;
+}
+.nav-close1, .menu-icon1
+{
+    display: none;
+}
+.nav1 h3
+{
+    font-size: 30px;
+}
+.nav1 a{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-size: 25px;
+  
+  }
+  .nav1 a::after
+  {
+    content: '';
+    width: 0%;
+    height:3px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav1 a:hover::after
+  {
+    width: 100%;
+  }
+  .nav1 a:hover{
+      color:turquoise;
+      transition: 1s ease;
+      background: rgb(0, 0, 0);
+      border-radius: 10px;
+  }
+@media only screen and (max-width: 1200px)
+{
+    .nav-items1
+    {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: block;
+        background-color: rgb(61, 60, 60);
+        margin: 0;
+        height: 100%;
+        border: 2px solid white;
+        box-shadow: -1px -1px 8px #3e3e3e99;
+        width: 250px; 
+        transition: all 0.8s ease;
+    }
+    .show-nav1
+    {
+        right: 0;
+    }
+    .nav-close1
+    {
+        display: block;
+        font-size: 30px;
+        text-align: right;
+        margin: 40px 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+    .nav1
+    {
+        text-align: center;
+        margin:20px auto;
+    }
+    .menu-icon1
+    {
+        display: block;
+        margin: auto 0;
+        margin: 34px 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .logo-container1 img
+    {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+        padding-right: 20px;
+    }
+    .h11
+    {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,126 @@
+
+<%-include('partials/header') -%>
+  <!-- <section class="header3" >
+<div id="frm"class="container">
+  <div style="text-align:center; padding-bottom: 12px;">
+    <h1 style="font-size: 50px" >Feedback</h1>
+    <h2>Hope you liked our website!! Pls leave us a message:</h2>
+  </div>
+    <hr>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form method="POST" action="/feedback">
+        <label>First Name</label>
+        <input type="text" name="naame" onkeypress="typesound()"required placeholder="Your first name.." value="">
+        <label >Last Name</label>
+        <input type="text"  name="lname" onkeypress="typesound()"placeholder="Your last name.." required>
+        <label >Phone No.</label>
+        <input type="tel" name="em" onkeypress="typesound()" placeholder="Your phone no." required pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Enter a 10 Digit Number')"
+        oninput="this.setCustomValidity('')">
+        <label >Write to us!!</label>
+        <textarea placeholder="Write something.." onkeypress="typesound()" name="cntn"style="height:170px"required></textarea>
+        <button type="submit" class="hero-btn">Submit</button>
+      </form>
+    </div>
+    <div>
+      <h1>work in progress...</h1>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</section>
+<hr> -->
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="feed.css">
+    <title>P3Y |Contact Us|</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <section class="contact11">
+      <div class="content11">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque velit delectus temporibus error expedita asperiores magni dolores porro voluptatum neque officiis eos voluptate repellat assumenda eaque, aperiam laudantium iste! Nisi.</p>
+      </div>
+      <div class="container11">
+        <div class="contactInfo11">
+          <div class="footbox11">
+            <div class="icon11"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="text11">
+              <h3>Address</h3>
+              <p>4671  Sugar Camp Road,<br>Owatonna,Minnesota,<br>55060</p>
+            </div>
+          </div>
+          <div class="footbox11">
+            <a href="tel:+91-9418012523" target="_blank"><div class="icon11"><i class="fa fa-phone" aria-hidden="true"></i></div></a>
+            <div class="text11">
+              <h3>Phone</h3>
+              <p>+91-9418012523</p>
+            </div>
+          </div>
+          <div class="footbox11">
+            <a href="mailto:p3yparamji123@gmail.com?subject=feedback" target="_blank"><div class="icon11"><i class="fa fa-envelope-o" aria-hidden="true"></i></div></a>
+            <div class="text11">
+              <h3>Email</h3>
+              <p>p3yparamji123@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm11">
+          <form method="POST" action="/feedback">
+            <div class="container">
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="naame" placeholder="Your first name..." required="required">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..." required="required">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="country">Phone No.</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="em" placeholder="Your phone no..." required pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Enter a 10 Digit Number')"
+                    oninput="this.setCustomValidity('')">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="cntn" placeholder="Write something..." style="height:200px" required="required"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+  <div class="wrapper">
+    <img src="up.png" alt="" onclick="totopscroll()">
+  </div>
+<hr>
+  <%-include('partials/footer') -%>
