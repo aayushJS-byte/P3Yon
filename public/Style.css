@@ -1,7 +1,7 @@
 .welcome
 {
   width: 100%;
-  background-image: linear-gradient(rgba(36, 36, 36, 0.753), rgba(48, 47, 47, 0.753)),  url("bg3.jpg");
+  background-image: linear-gradient(rgba(17, 17, 17, 0.753), rgba(17, 17, 17, 0.753)),  url("bg3.jpg");
   background-position: center;
   background-size: cover;
   height: auto;
