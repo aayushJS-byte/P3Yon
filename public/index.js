@@ -23,8 +23,6 @@ function menu() {
   window.location.href = "/travel-guide"
 
 }
-
-// DELHI MUMBAI MUNNAR JIMCORBET BANGLORE
 function totopscroll() {
-  window.scrollTo(0, 0);
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }

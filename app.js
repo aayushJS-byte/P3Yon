@@ -1,17 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const ejs = require("ejs");
 
 const app = express()
-// mongoose.connect("mongodb+srv://aayush:aayushgupta123456789@cluster0.yylvo.mongodb.net/testDB", {
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true
-// });
+mongoose.connect("mongodb+srv://aayush:aayushgupta123456789@cluster0.yylvo.mongodb.net/testDB", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}); 
 app.use(bodyParser.urlencoded({
     extended: false
 }))
-
 // parse application/json
 app.use(bodyParser.json())
 app.set('view engine', 'ejs');
@@ -26,8 +25,15 @@ var userFeed =[
     phone: "",
     feedback: ""
 }
-]
-// Feedzzz = new mongoose.model('Feedzzz', feedSchema);
+] 
+feedSchema = new mongoose.Schema({
+    name: String,
+    last_name: String,
+    email: String,
+    feedback: String
+})
+// Bhai, what was that ? lol
+Feedzzz = new mongoose.model('Feedzzz', feedSchema);
 
 
 app.get("/", (req, res) => {
@@ -45,31 +51,32 @@ app.get("/feedback", (req, res) => {
 })
 
 app.post("/feedback", (req, res) => {
-    var name = req.body.naame;
-    var lname = req.body.lname;
-    var phone = req.body.em;
-    var feed = req.body.cntn;
-     console.log("["+name+"] "+ "["+lname + "] "+ "["+phone +"]"+" [said: "+feed+"]");
-    // var userFeed = new Feedzzz({
+    // var name = req.body.naame;
+    // var lname = req.body.lname;
+    // var phone = req.body.em;
+    // var feed = req.body.cntn;
+    //  console.log("["+name+"] "+ "["+lname + "] "+ "["+phone +"]"+" [said: "+feed+"]");
+    const feedbackofuser = new Feedzzz({
+        name: req.body.naame.toString(),
+        last_name: req.body.lname,
+        email: req.body.em,
+        feedback: req.body.cntn
+    })
+    // var Feed = {
     //     name: req.body.naame,
     //     last_name: req.body.lname,
-    //     email: req.body.em,
+    //     phone: req.body.em,
     //     feedback: req.body.cntn
-    // })
-    var Feed = {
-        name: req.body.naame,
-        last_name: req.body.lname,
-        phone: req.body.em,
-        feedback: req.body.cntn
-    }
-    userFeed.push(Feed)
-    // userFeed.save(function(err) {
-        // if (err) {
-            // console.error(err);
-        // } else {
+    // }
+    // userFeed.push(Feed)
+    feedbackofuser.save(function(err) {
+        if (err) {
+            console.error(err);
+        } else {
             res.redirect("/")
-        // }
+        }
     })
+})
 app.get("/feed", (req,res)=>{
     res.render("submit")
 })
